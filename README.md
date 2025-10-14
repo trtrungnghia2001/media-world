@@ -35,7 +35,7 @@ It provides authentication, personalized favorites, and reading/watching history
 
 ## Demo
 
-[https://mern-media-world-site-client.vercel.app/](https://mern-media-world-site-client.vercel.app/)
+[https://media-world.vercel.app/](https://media-world.vercel.app/)
 
 ## Images
 
