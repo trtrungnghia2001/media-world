@@ -73,7 +73,7 @@ const MovieCard = ({
       </Link>
       <div className="mt-4 mb-2">
         <h5 className="pb-0.5 line-clamp-1 ">
-          <Link to={`/movie/` + data.slug} className="hover:text-blue-500">
+          <Link to={link} className="hover:text-blue-500">
             {data.name}
           </Link>
         </h5>
