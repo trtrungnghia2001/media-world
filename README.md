@@ -39,7 +39,7 @@ It provides authentication, personalized favorites, and reading/watching history
 
 ## Images
 
-<img width="1920" height="868" alt="1" src="https://github.com/user-attachments/assets/bdb2fcbd-fd1b-4ff9-80fa-5a496649b965" />
-<img width="1920" height="868" alt="2" src="https://github.com/user-attachments/assets/f1ebf2f0-5c5d-4804-93ce-70516092ec5c" />
-<img width="1920" height="2388" alt="3" src="https://github.com/user-attachments/assets/ce88316f-c1d8-471d-b748-db83228084ae" />
-<img width="1827" height="3248" alt="4" src="https://github.com/user-attachments/assets/3778bdb7-8a90-42bf-9c82-45f281a334d2" />
+<img width="1920" height="868" alt="1" src="https://github.com/user-attachments/assets/485259f8-63d2-4566-95c3-b839aa1dca3f" />
+<img width="1920" height="1038" alt="2" src="https://github.com/user-attachments/assets/70bf9cd0-c40d-4474-ba54-5e93174d49c6" />
+<img width="1920" height="2388" alt="3" src="https://github.com/user-attachments/assets/9af3bf03-5900-4698-a488-2d8c820a6e92" />
+<img width="1920" height="1920" alt="4" src="https://github.com/user-attachments/assets/2f615b88-ca66-4252-9838-0dc6a29840d3" />
