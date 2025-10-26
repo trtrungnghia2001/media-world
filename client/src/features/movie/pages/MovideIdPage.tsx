@@ -5,11 +5,9 @@ import {
   ophimGetImage,
   ophimGetMovieDetailApi,
   ophimGetPeoplesApi,
-  ophimGetProfile,
 } from '../apis/ophim.api'
 import { useEffect, useMemo } from 'react'
 import type { IMovieDetail, IOphimPeople } from '../types/ophim.type'
-import { MOVIE_IMAGE_DEFAULT } from '../constants/image.constant'
 import { Rate } from 'antd'
 import MoviePlay from '../components/MoviePlay'
 import ButtonLike from '@/features/media-auth/components/ButtonLike'
@@ -17,6 +15,7 @@ import ButtonFavorite from '@/features/media-auth/components/ButtonFavorite'
 import { useAuthStore } from '@/features/auth/stores/auth.store'
 import { useMediaStore } from '@/features/media-auth/stores/media.store'
 import _ from 'lodash'
+import PeopleCard from '../components/PeopleCard'
 
 const MovideIdPage = () => {
   const { slug } = useParams()
@@ -46,8 +45,6 @@ const MovideIdPage = () => {
       'known_for_department',
     )
   }, [getPeoplesApiResult.data])
-
-  console.log({ peopleGroup })
 
   const server = useMemo(
     () => searchParams.get('server') || '0',
@@ -211,31 +208,10 @@ const MovideIdPage = () => {
               <h2 className="pl-3 border-l-[3px] border-l-blue-500 leading-5">
                 {key}
               </h2>
-              <ul className="grid gap-4 grid-cols-2 sm:grid-cols-3">
+              <ul className="grid gap-4 grid-cols-2 md:grid-cols-3">
                 {value?.map((item) => (
-                  <li
-                    key={item.tmdb_people_id}
-                    className="flex items-center gap-3"
-                  >
-                    <div className="w-14 aspect-square">
-                      <img
-                        src={
-                          ophimGetProfile(item.profile_path) ||
-                          MOVIE_IMAGE_DEFAULT.avatar_notfound_image
-                        }
-                        loading="lazy"
-                        alt="avatar"
-                        className="img"
-                      />
-                    </div>
-                    <div>
-                      <h4 className="flex-1 line-clamp-1 font-medium text-sm">
-                        {item.character}
-                      </h4>
-                      <h4 className="flex-1 line-clamp-1 text-gray-500 text-13">
-                        {item.name}
-                      </h4>
-                    </div>
+                  <li key={item.tmdb_people_id}>
+                    <PeopleCard data={item} />
                   </li>
                 ))}
               </ul>
